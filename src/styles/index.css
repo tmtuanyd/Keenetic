@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /*** Colors ***/
+  --primary: 74 108 247;
+  --black: 18 23 35;
+  --gray-dark: 30 35 46;
+  --gray-light: 252 252 252;
+  --gray-lighter: 240 242 249;
+  --dark: 29 36 48;
+  --body-color: 120 130 147;
+  --body-color-dark: 149 156 177;
+  --bg-color-dark: 23 28 40;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto;
+  }
+
+  @media (min-width: 1500px) {
+    .container {
+      max-width: 1440px;
+      margin: auto;
+    }
+  }
+}
+
+html,
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
